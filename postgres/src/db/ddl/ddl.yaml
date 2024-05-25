@@ -1,0 +1,12 @@
+ddl:
+  - 01-schema.sql
+  - 02-patients.sql
+  - 03-encounters.sql
+  - 04-conditions.sql
+  - 05-medications.sql
+
+insert:
+  - patients.csv
+  - encounters.csv
+  - conditions.csv
+  - medications.csv
