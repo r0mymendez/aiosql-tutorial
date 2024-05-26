@@ -7,4 +7,4 @@ ENV POSTGRES_PASSWORD postgres
 ENV POSTGRES_DB postgres
 
 # Opcional: Agregar scripts de inicialización
-COPY ./init-scripts/ /docker-entrypoint-initdb.d/
+COPY ./src/db/ /docker-entrypoint-initdb.d/

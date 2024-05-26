@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # create tables
     print('ETL: Creating tables')
     for file in tqdm(file_config['ddl']):
-        file  = f"ddl/{file}"
+        file  = f"db/ddl/{file}"
         query = Utils.read_file(file)
         sql.execute(query = query)  
     

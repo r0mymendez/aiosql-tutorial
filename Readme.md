@@ -43,7 +43,11 @@ Access the aiosql code in the 'main.ipynb' notebook, where you'll delve into a s
 * 2️⃣ - **Change directory** to the 'postgres' folder → `cd postgres`
 * 3️⃣ - **Create postgres database** → Execute in the terminal: `docker-compose -f docker-compose.yml up --build`
 * 4️⃣ - **Check if your container is running** → Execute in the terminal: `docker ps`
-* 5️⃣ - **Load the csv files** → Execute the following command for load the csv file in the container: `python3 etl.py`
+* 5️⃣ - **Load the csv files** → Execute the following command for load the csv file in the container: 
+```bash
+	cd src 
+	python3 etl.py
+```
   
 ### 🏥 Hospital Data
 To implement aiosql, we will use the datasets from [Synthea](https://synthea.mitre.org/), which simulates a hospital database. These synthetic data are generated from a simulation considering various variables of a population in Massachusetts. 
