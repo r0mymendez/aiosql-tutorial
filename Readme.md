@@ -28,12 +28,26 @@ Below, I will share a series of features that this library already has or can ha
 
 ---
 
+## 🚀 Quick Start
 
 ### 🛠️ Tutorial
 Explore this tutorial, which covers database creation, defining queries from user stories, and additional functionality such as creating a query catalog.
 
-You can access the code in the 'main.ipynb' notebook, where you'll engage in a simple exercise using three user stories to simulate a project.
+### 🛠️ Exploring aiosql: Hands-on Exercise
+Access the aiosql code in the 'main.ipynb' notebook, where you'll delve into a simple exercise involving three user stories. This exercise will simulate a project's interaction with a **PostgreSQL database**, with detailed instructions on how to set it up provided in the following section.
 
+
+### 🛠️ Create a PostgreSQL database
+
+* 1️⃣ - **Clone this [repository: aiosql-tutorial](https://github.com/r0mymendez/aiosql-tutorial/tree/master)** → `https://github.com/r0mymendez/aiosql-tutorial.git`
+* 2️⃣ - **Change directory** to the 'postgres' folder → `cd postgres`
+* 3️⃣ - **Create postgres database** → Execute in the terminal: `docker-compose -f docker-compose.yml up --build`
+* 4️⃣ - **Check if your container is running** → Execute in the terminal: `docker ps`
+* 5️⃣ - **Load the csv files** → Execute the following command for load the csv file in the container: `python3 etl.py`
+  
+### 🏥 Hospital Data
+To implement aiosql, we will use the datasets from [Synthea](https://synthea.mitre.org/), which simulates a hospital database. These synthetic data are generated from a simulation considering various variables of a population in Massachusetts. 
+From these datasets, we will use the tables: `conditions`, `encounters`, and `patients`. 
 
 
 
